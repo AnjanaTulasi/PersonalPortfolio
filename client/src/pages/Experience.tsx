@@ -1,6 +1,39 @@
 import { Building, Rocket, Users, Server } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 
+// Company Logo Components
+const NextGenLogo = () => (
+  <div className="w-12 h-12 bg-gradient-to-br from-blue-600 to-purple-600 rounded-lg flex items-center justify-center flex-shrink-0 shadow-lg">
+    <div className="text-white font-bold text-xs text-center">
+      <div className="leading-tight">NG</div>
+    </div>
+  </div>
+);
+
+const HeadstarterLogo = () => (
+  <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-red-500 rounded-lg flex items-center justify-center flex-shrink-0 shadow-lg">
+    <div className="text-white font-bold text-xs">
+      <div className="leading-tight">HS</div>
+    </div>
+  </div>
+);
+
+const StCloudStateLogo = () => (
+  <div className="w-12 h-12 bg-red-600 rounded-lg flex items-center justify-center flex-shrink-0 shadow-lg">
+    <div className="text-white font-bold text-[10px] text-center">
+      <div className="leading-tight">SCSU</div>
+    </div>
+  </div>
+);
+
+const VodafoneLogo = () => (
+  <div className="w-12 h-12 bg-red-600 rounded-lg flex items-center justify-center flex-shrink-0 shadow-lg">
+    <div className="text-white font-bold text-xs">
+      <div className="leading-tight">V</div>
+    </div>
+  </div>
+);
+
 export default function Experience() {
   const experiences = [
     {
@@ -9,8 +42,7 @@ export default function Experience() {
       companyUrl: "https://nxtgensoftwaresolutions.com/",
       period: "September 2024 – April 2025",
       description: "Working on middleware development, WebLogic administration, and automation scripting to streamline deployment processes.",
-      icon: Building,
-      color: "bg-primary"
+      logo: NextGenLogo
     },
     {
       title: "Software Engineering Fellow",
@@ -18,8 +50,7 @@ export default function Experience() {
       companyUrl: "https://headstarter.co/",
       period: "July 2024 – September 2024",
       description: "Intensive full-stack web development program focusing on modern JavaScript frameworks, React, and backend technologies.",
-      icon: Rocket,
-      color: "bg-green-500"
+      logo: HeadstarterLogo
     },
     {
       title: "Graduate Assistant & TRIO Tutor",
@@ -27,8 +58,7 @@ export default function Experience() {
       companyUrl: "https://www.stcloudstate.edu/",
       period: "January 2023 – Present",
       description: "Teaching mobile app development concepts and providing tutoring in Computer Science and Mathematics for undergraduate students.",
-      icon: Users,
-      color: "bg-purple-500"
+      logo: StCloudStateLogo
     },
     {
       title: "Middleware Engineer",
@@ -36,8 +66,7 @@ export default function Experience() {
       companyUrl: "https://www.vodafone.com/careers/professional-career-areas/shared-services",
       period: "December 2019 – December 2022",
       description: "Specialized in middleware automation, system monitoring, and performance optimization using various enterprise tools and technologies.",
-      icon: Server,
-      color: "bg-red-500"
+      logo: VodafoneLogo
     }
   ];
 
@@ -48,14 +77,12 @@ export default function Experience() {
         
         <div className="space-y-8">
           {experiences.map((exp, index) => {
-            const Icon = exp.icon;
+            const LogoComponent = exp.logo;
             return (
               <Card key={index} className="hover-lift">
                 <CardContent className="p-6">
                   <div className="flex items-start space-x-4">
-                    <div className={`w-12 h-12 ${exp.color} rounded-lg flex items-center justify-center flex-shrink-0`}>
-                      <Icon className="h-6 w-6 text-white" />
-                    </div>
+                    <LogoComponent />
                     <div className="flex-1">
                       <h3 className="text-xl font-semibold text-slate-800">{exp.title}</h3>
                       <a 

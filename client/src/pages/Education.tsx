@@ -2,6 +2,16 @@ import { GraduationCap } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 
+// University Logo Component
+const StCloudStateLogo = () => (
+  <div className="w-16 h-16 bg-red-600 rounded-xl flex items-center justify-center flex-shrink-0 shadow-lg">
+    <div className="text-white font-bold text-center">
+      <div className="text-xs leading-tight">SCSU</div>
+      <div className="text-[8px] opacity-90">HUSKIES</div>
+    </div>
+  </div>
+);
+
 export default function Education() {
   const courses = [
     "Operating Systems",
@@ -27,9 +37,7 @@ export default function Education() {
         <Card className="hover-lift">
           <CardContent className="p-8">
             <div className="flex items-start space-x-4">
-              <div className="w-16 h-16 bg-primary rounded-xl flex items-center justify-center flex-shrink-0">
-                <GraduationCap className="h-8 w-8 text-white" />
-              </div>
+              <StCloudStateLogo />
               <div className="flex-1">
                 <h3 className="text-2xl font-semibold text-slate-800 mb-2">Master's in Computer Science</h3>
                 <a 
