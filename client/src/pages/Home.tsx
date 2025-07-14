@@ -37,10 +37,18 @@ export default function Home() {
           </div>
           
           <div className="flex justify-center">
-            <div className="w-80 h-80 bg-gradient-to-br from-primary to-blue-600 rounded-2xl shadow-xl flex items-center justify-center">
-              <div className="w-64 h-64 bg-white rounded-xl flex items-center justify-center">
-                <span className="text-6xl text-primary font-bold">AT</span>
-              </div>
+            <div className="w-80 h-80 bg-gradient-to-br from-primary to-blue-600 rounded-2xl shadow-xl p-4">
+              <img 
+                src="/profile.jpg"
+                alt="Anjana Tulasi Deverapalli"
+                className="w-full h-full object-cover rounded-xl"
+                onError={(e) => {
+                  // Fallback to initials if image fails to load
+                  const target = e.target as HTMLImageElement;
+                  target.style.display = 'none';
+                  target.parentElement!.innerHTML = '<div class="w-full h-full bg-white rounded-xl flex items-center justify-center"><span class="text-6xl text-primary font-bold">AT</span></div>';
+                }}
+              />
             </div>
           </div>
         </div>
