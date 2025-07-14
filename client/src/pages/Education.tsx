@@ -4,19 +4,25 @@ import { Badge } from "@/components/ui/badge";
 
 // University Logo Component
 const StCloudStateLogo = () => (
-  <div className="w-16 h-16 bg-white rounded-xl flex items-center justify-center flex-shrink-0 shadow-lg border border-gray-200">
-    <img 
-      src="/scsu-logo.png"
-      alt="Saint Cloud State University Logo"
-      className="w-12 h-12 object-contain"
-      onError={(e) => {
-        // Fallback to icon if image fails to load
-        const target = e.target as HTMLImageElement;
-        target.style.display = 'none';
-        target.parentElement!.innerHTML = '<div class="w-12 h-12 bg-red-600 rounded-lg flex items-center justify-center"><span class="text-white font-bold text-xs">SCSU</span></div>';
-      }}
-    />
-  </div>
+  <a 
+    href="https://www.stcloudstate.edu/" 
+    target="_blank" 
+    rel="noopener noreferrer"
+    className="block"
+  >
+    <div className="w-16 h-16 bg-white rounded-xl flex items-center justify-center flex-shrink-0 shadow-lg border border-gray-200 transition-all duration-300 hover:scale-110 hover:shadow-xl hover:border-red-300 cursor-pointer">
+      <img 
+        src="/scsu-logo-updated.png"
+        alt="Saint Cloud State University Logo"
+        className="w-12 h-12 object-contain transition-transform duration-300 hover:scale-105"
+        onError={(e) => {
+          const target = e.target as HTMLImageElement;
+          target.style.display = 'none';
+          target.parentElement!.innerHTML = '<div class="w-12 h-12 bg-red-600 rounded-lg flex items-center justify-center"><span class="text-white font-bold text-xs">SCSU</span></div>';
+        }}
+      />
+    </div>
+  </a>
 );
 
 export default function Education() {

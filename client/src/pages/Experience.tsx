@@ -2,64 +2,92 @@ import { Building, Rocket, Users, Server } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 
 // Company Logo Components
-const NextGenLogo = () => (
-  <div className="w-12 h-12 bg-white rounded-lg flex items-center justify-center flex-shrink-0 shadow-lg border border-gray-200">
-    <img 
-      src="/nextgen-logo.png"
-      alt="NextGen Software Solutions Logo"
-      className="w-10 h-8 object-contain"
-      onError={(e) => {
-        const target = e.target as HTMLImageElement;
-        target.style.display = 'none';
-        target.parentElement!.innerHTML = '<div class="text-blue-600 font-bold text-xs">NG</div>';
-      }}
-    />
-  </div>
+const NextGenLogo = ({ url }: { url: string }) => (
+  <a 
+    href={url} 
+    target="_blank" 
+    rel="noopener noreferrer"
+    className="block"
+  >
+    <div className="w-12 h-12 bg-white rounded-lg flex items-center justify-center flex-shrink-0 shadow-lg border border-gray-200 transition-all duration-300 hover:scale-110 hover:shadow-xl hover:border-blue-300 cursor-pointer">
+      <img 
+        src="/nextgen-logo.png"
+        alt="NextGen Software Solutions Logo"
+        className="w-10 h-8 object-contain transition-transform duration-300 hover:scale-105"
+        onError={(e) => {
+          const target = e.target as HTMLImageElement;
+          target.style.display = 'none';
+          target.parentElement!.innerHTML = '<div class="text-blue-600 font-bold text-xs">NG</div>';
+        }}
+      />
+    </div>
+  </a>
 );
 
-const HeadstarterLogo = () => (
-  <div className="w-12 h-12 bg-gray-900 rounded-lg flex items-center justify-center flex-shrink-0 shadow-lg">
-    <img 
-      src="/headstarter-logo.png"
-      alt="Headstarter Fellowship Logo"
-      className="w-8 h-8 object-contain"
-      onError={(e) => {
-        const target = e.target as HTMLImageElement;
-        target.style.display = 'none';
-        target.parentElement!.innerHTML = '<div class="text-green-400 font-bold text-xs">HS</div>';
-      }}
-    />
-  </div>
+const HeadstarterLogo = ({ url }: { url: string }) => (
+  <a 
+    href={url} 
+    target="_blank" 
+    rel="noopener noreferrer"
+    className="block"
+  >
+    <div className="w-12 h-12 bg-gray-900 rounded-lg flex items-center justify-center flex-shrink-0 shadow-lg transition-all duration-300 hover:scale-110 hover:shadow-xl hover:bg-gray-800 cursor-pointer">
+      <img 
+        src="/headstarter-logo.png"
+        alt="Headstarter Fellowship Logo"
+        className="w-8 h-8 object-contain transition-transform duration-300 hover:scale-105"
+        onError={(e) => {
+          const target = e.target as HTMLImageElement;
+          target.style.display = 'none';
+          target.parentElement!.innerHTML = '<div class="text-green-400 font-bold text-xs">HS</div>';
+        }}
+      />
+    </div>
+  </a>
 );
 
-const StCloudStateLogo = () => (
-  <div className="w-12 h-12 bg-white rounded-lg flex items-center justify-center flex-shrink-0 shadow-lg border border-gray-200">
-    <img 
-      src="/scsu-logo.png"
-      alt="Saint Cloud State University Logo"
-      className="w-10 h-10 object-contain"
-      onError={(e) => {
-        const target = e.target as HTMLImageElement;
-        target.style.display = 'none';
-        target.parentElement!.innerHTML = '<div class="text-red-600 font-bold text-[10px]">SCSU</div>';
-      }}
-    />
-  </div>
+const StCloudStateLogo = ({ url }: { url: string }) => (
+  <a 
+    href={url} 
+    target="_blank" 
+    rel="noopener noreferrer"
+    className="block"
+  >
+    <div className="w-12 h-12 bg-white rounded-lg flex items-center justify-center flex-shrink-0 shadow-lg border border-gray-200 transition-all duration-300 hover:scale-110 hover:shadow-xl hover:border-red-300 cursor-pointer">
+      <img 
+        src="/scsu-logo-updated.png"
+        alt="Saint Cloud State University Logo"
+        className="w-10 h-10 object-contain transition-transform duration-300 hover:scale-105"
+        onError={(e) => {
+          const target = e.target as HTMLImageElement;
+          target.style.display = 'none';
+          target.parentElement!.innerHTML = '<div class="text-red-600 font-bold text-[10px]">SCSU</div>';
+        }}
+      />
+    </div>
+  </a>
 );
 
-const VodafoneLogo = () => (
-  <div className="w-12 h-12 bg-white rounded-lg flex items-center justify-center flex-shrink-0 shadow-lg border border-gray-200">
-    <img 
-      src="/vois-logo.png"
-      alt="Vodafone VOIS Logo"
-      className="w-10 h-6 object-contain"
-      onError={(e) => {
-        const target = e.target as HTMLImageElement;
-        target.style.display = 'none';
-        target.parentElement!.innerHTML = '<div class="text-red-600 font-bold text-xs">VOIS</div>';
-      }}
-    />
-  </div>
+const VodafoneLogo = ({ url }: { url: string }) => (
+  <a 
+    href={url} 
+    target="_blank" 
+    rel="noopener noreferrer"
+    className="block"
+  >
+    <div className="w-12 h-12 bg-white rounded-lg flex items-center justify-center flex-shrink-0 shadow-lg border border-gray-200 transition-all duration-300 hover:scale-110 hover:shadow-xl hover:border-red-300 cursor-pointer">
+      <img 
+        src="/vois-logo.png"
+        alt="Vodafone VOIS Logo"
+        className="w-10 h-6 object-contain transition-transform duration-300 hover:scale-105"
+        onError={(e) => {
+          const target = e.target as HTMLImageElement;
+          target.style.display = 'none';
+          target.parentElement!.innerHTML = '<div class="text-red-600 font-bold text-xs">VOIS</div>';
+        }}
+      />
+    </div>
+  </a>
 );
 
 export default function Experience() {
@@ -110,7 +138,7 @@ export default function Experience() {
               <Card key={index} className="hover-lift">
                 <CardContent className="p-6">
                   <div className="flex items-start space-x-4">
-                    <LogoComponent />
+                    <LogoComponent url={exp.companyUrl} />
                     <div className="flex-1">
                       <h3 className="text-xl font-semibold text-slate-800">{exp.title}</h3>
                       <a 
