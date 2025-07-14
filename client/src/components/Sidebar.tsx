@@ -102,7 +102,7 @@ export default function Sidebar() {
                       onClick={closeSidebar}
                     >
                       <Icon className="h-5 w-5" />
-                      <span className="text-[#ffffff] text-left font-bold bg-[#00000000]">{item.label}</span>
+                      <span>{item.label}</span>
                     </span>
                   </Link>
                 </li>
