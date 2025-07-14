@@ -32,7 +32,14 @@ export default function Education() {
               </div>
               <div className="flex-1">
                 <h3 className="text-2xl font-semibold text-slate-800 mb-2">Master's in Computer Science</h3>
-                <p className="text-lg text-primary font-medium mb-2">Saint Cloud State University</p>
+                <a 
+                  href="https://www.stcloudstate.edu/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-lg text-primary font-medium mb-2 hover:text-blue-700 hover:underline transition-colors inline-block"
+                >
+                  Saint Cloud State University
+                </a>
                 <p className="text-slate-600 mb-4">January 2023 – May 2025</p>
                 
                 <div className="mb-4">
