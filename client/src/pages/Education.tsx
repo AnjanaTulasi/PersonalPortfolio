@@ -4,11 +4,18 @@ import { Badge } from "@/components/ui/badge";
 
 // University Logo Component
 const StCloudStateLogo = () => (
-  <div className="w-16 h-16 bg-red-600 rounded-xl flex items-center justify-center flex-shrink-0 shadow-lg">
-    <div className="text-white font-bold text-center">
-      <div className="text-xs leading-tight">SCSU</div>
-      <div className="text-[8px] opacity-90">HUSKIES</div>
-    </div>
+  <div className="w-16 h-16 bg-white rounded-xl flex items-center justify-center flex-shrink-0 shadow-lg border border-gray-200">
+    <img 
+      src="/scsu-logo.png"
+      alt="Saint Cloud State University Logo"
+      className="w-12 h-12 object-contain"
+      onError={(e) => {
+        // Fallback to icon if image fails to load
+        const target = e.target as HTMLImageElement;
+        target.style.display = 'none';
+        target.parentElement!.innerHTML = '<div class="w-12 h-12 bg-red-600 rounded-lg flex items-center justify-center"><span class="text-white font-bold text-xs">SCSU</span></div>';
+      }}
+    />
   </div>
 );
 

@@ -3,34 +3,62 @@ import { Card, CardContent } from "@/components/ui/card";
 
 // Company Logo Components
 const NextGenLogo = () => (
-  <div className="w-12 h-12 bg-gradient-to-br from-blue-600 to-purple-600 rounded-lg flex items-center justify-center flex-shrink-0 shadow-lg">
-    <div className="text-white font-bold text-xs text-center">
-      <div className="leading-tight">NG</div>
-    </div>
+  <div className="w-12 h-12 bg-white rounded-lg flex items-center justify-center flex-shrink-0 shadow-lg border border-gray-200">
+    <img 
+      src="/nextgen-logo.png"
+      alt="NextGen Software Solutions Logo"
+      className="w-10 h-8 object-contain"
+      onError={(e) => {
+        const target = e.target as HTMLImageElement;
+        target.style.display = 'none';
+        target.parentElement!.innerHTML = '<div class="text-blue-600 font-bold text-xs">NG</div>';
+      }}
+    />
   </div>
 );
 
 const HeadstarterLogo = () => (
-  <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-red-500 rounded-lg flex items-center justify-center flex-shrink-0 shadow-lg">
-    <div className="text-white font-bold text-xs">
-      <div className="leading-tight">HS</div>
-    </div>
+  <div className="w-12 h-12 bg-gray-900 rounded-lg flex items-center justify-center flex-shrink-0 shadow-lg">
+    <img 
+      src="/headstarter-logo.png"
+      alt="Headstarter Fellowship Logo"
+      className="w-8 h-8 object-contain"
+      onError={(e) => {
+        const target = e.target as HTMLImageElement;
+        target.style.display = 'none';
+        target.parentElement!.innerHTML = '<div class="text-green-400 font-bold text-xs">HS</div>';
+      }}
+    />
   </div>
 );
 
 const StCloudStateLogo = () => (
-  <div className="w-12 h-12 bg-red-600 rounded-lg flex items-center justify-center flex-shrink-0 shadow-lg">
-    <div className="text-white font-bold text-[10px] text-center">
-      <div className="leading-tight">SCSU</div>
-    </div>
+  <div className="w-12 h-12 bg-white rounded-lg flex items-center justify-center flex-shrink-0 shadow-lg border border-gray-200">
+    <img 
+      src="/scsu-logo.png"
+      alt="Saint Cloud State University Logo"
+      className="w-10 h-10 object-contain"
+      onError={(e) => {
+        const target = e.target as HTMLImageElement;
+        target.style.display = 'none';
+        target.parentElement!.innerHTML = '<div class="text-red-600 font-bold text-[10px]">SCSU</div>';
+      }}
+    />
   </div>
 );
 
 const VodafoneLogo = () => (
-  <div className="w-12 h-12 bg-red-600 rounded-lg flex items-center justify-center flex-shrink-0 shadow-lg">
-    <div className="text-white font-bold text-xs">
-      <div className="leading-tight">V</div>
-    </div>
+  <div className="w-12 h-12 bg-white rounded-lg flex items-center justify-center flex-shrink-0 shadow-lg border border-gray-200">
+    <img 
+      src="/vois-logo.png"
+      alt="Vodafone VOIS Logo"
+      className="w-10 h-6 object-contain"
+      onError={(e) => {
+        const target = e.target as HTMLImageElement;
+        target.style.display = 'none';
+        target.parentElement!.innerHTML = '<div class="text-red-600 font-bold text-xs">VOIS</div>';
+      }}
+    />
   </div>
 );
 
