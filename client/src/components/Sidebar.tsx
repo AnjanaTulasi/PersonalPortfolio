@@ -35,7 +35,6 @@ export default function Sidebar() {
           {isOpen ? <X className="h-6 w-6 text-slate-600" /> : <Menu className="h-6 w-6 text-slate-600" />}
         </button>
       </div>
-
       {/* Mobile Overlay */}
       {isOpen && isMobile && (
         <div
@@ -43,7 +42,6 @@ export default function Sidebar() {
           onClick={closeSidebar}
         />
       )}
-
       {/* Sidebar */}
       <nav className={`fixed left-0 top-0 h-full w-80 bg-white shadow-lg z-50 overflow-y-auto transition-transform ${
         isMobile ? (isOpen ? 'translate-x-0' : '-translate-x-full') : 'translate-x-0'
@@ -104,7 +102,7 @@ export default function Sidebar() {
                       onClick={closeSidebar}
                     >
                       <Icon className="h-5 w-5" />
-                      <span>{item.label}</span>
+                      <span className="text-[#ffffff] text-left font-bold bg-[#00000000]">{item.label}</span>
                     </span>
                   </Link>
                 </li>
