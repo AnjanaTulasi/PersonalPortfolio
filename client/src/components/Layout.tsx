@@ -1,6 +1,7 @@
 import { ReactNode } from "react";
 import Sidebar from "./Sidebar";
 import Footer from "./Footer";
+import ContactSection from "./ContactSection";
 
 interface LayoutProps {
   children: ReactNode;
@@ -8,12 +9,13 @@ interface LayoutProps {
 
 export default function Layout({ children }: LayoutProps) {
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="h-screen bg-gray-50 flex flex-col">
       <Sidebar />
-      <main className="md:ml-80 pt-16 md:pt-0">
-        <div className="page-transition">
+      <main className="md:ml-80 pt-16 md:pt-0 flex-1 flex flex-col min-h-0">
+        <div className="page-transition flex-1 overflow-y-auto">
           {children}
         </div>
+        <ContactSection />
         <Footer />
       </main>
     </div>

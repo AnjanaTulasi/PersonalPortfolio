@@ -52,8 +52,16 @@
     @apply border-border;
   }
 
-  body {
+  html, body {
     @apply bg-gray-50 text-slate-800 font-inter antialiased;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  #root {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
   }
 }
 
