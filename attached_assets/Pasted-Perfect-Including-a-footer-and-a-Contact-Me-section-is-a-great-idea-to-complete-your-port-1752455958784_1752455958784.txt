@@ -1,0 +1,129 @@
+Perfect! Including a **footer** and a **"Contact Me"** section is a great idea to complete your portfolio professionally. Here's the **final, complete, and enhanced Replit AI prompt** with everything you've asked for — using **React.js** and **regular CSS**.
+
+---
+
+## ✅ ✨ Final Replit Prompt — Portfolio Website (React.js + CSS)
+
+> Create a **responsive personal portfolio website** using **React.js**, **React Router DOM**, and **regular CSS** (no Tailwind or frameworks).
+>
+> ### 🌐 Global Layout:
+>
+> * Include a **left-side vertical navigation bar** (visible on all pages).
+> * The sidebar should have links to the following pages:
+>
+>   * **Home**
+>   * **Education**
+>   * **Experience**
+>   * **Skills**
+>   * **Projects**
+>   * **Contact Me**
+> * Use **React Router DOM** for routing. The sidebar should be sticky/fixed and collapse into a top hamburger menu on mobile devices.
+
+---
+
+### 🏠 **Home Page**
+
+* Include:
+
+  * A **profile picture** on the right.
+  * A **short self-introduction** paragraph on the left.
+  * Below the picture, show **icon links** to:
+
+    * LinkedIn: `https://linkedin.com/in/anjanatulasi`
+    * GitHub: `https://github.com/AnjanaTulasi`
+    * Resume (PDF downloadable link stored in the `public` folder)
+* Use **CSS animations** (e.g., fade-in or slide-in effects) for smooth transitions.
+
+---
+
+### 🎓 **Education Page**
+
+* Show:
+
+  * Master’s in Computer Science, Saint Cloud State University, Jan 2023 – May 2025
+  * Related Courses: Operating Systems, Natural Language Processing, Big Data, Databases, Algorithms
+
+---
+
+### 💼 **Experience Page**
+
+List the following in reverse chronological order:
+
+1. **NextGen Software Solutions** (Intern, Sep 2024 – Apr 2025) – Middleware, WebLogic, scripting
+2. **Headstarter Fellowship** (Jul 2024 – Sep 2024) – Full-stack web development
+3. **Graduate Assistant & TRIO Tutor** – Teaching app development, tutoring CS & Math
+4. **Vodafone (*VOIS*)** (Dec 2019 – Dec 2022) – Middleware Engineer, automation, monitoring
+
+---
+
+### 🛠️ **Skills Page**
+
+Display categorized skill badges:
+
+* **Languages**: Python, C, C++, Shell, SQL
+* **Frontend**: HTML, CSS, JavaScript, React
+* **Databases**: MongoDB, PostgreSQL, Oracle SQL
+* **DevOps/Tools**: Git, Jenkins, Docker, Splunk, AppDynamics
+* Use colored tags or badge-styled boxes for visual appeal.
+
+---
+
+### 💡 **Projects Page**
+
+Use a **card layout** for each of the following:
+
+1. **AVATAR** – ML + brainwave drone control using OpenBCI
+2. **IoT Parking System** – MQTT, RFID, ALPR, real-time reservation
+3. **Healthcare Management System** – React, PostgreSQL, MongoDB
+4. **Hindi POS Tagger** – NLP using Hidden Markov Models
+   Include title, short description, tech used, and GitHub/demo link placeholders.
+
+---
+
+### ✉️ **Contact Me Page**
+
+Include:
+
+* A simple **form** with:
+
+  * Name (text input)
+  * Email (email input)
+  * Message (textarea for "Drop a note")
+  * Submit button (no backend needed — placeholder or `mailto:` action)
+* Also display:
+
+  * **Email**: `anjanatdeverapalli@gmail.com`
+  * Optional: add social media icons again here
+* Make sure it is responsive and styled cleanly.
+
+---
+
+### 📍 **Footer**
+
+Add a footer visible on every page with:
+
+* Your full name: **Anjana Tulasi Deverapalli**
+* Email: `anjanatdeverapalli@gmail.com`
+* Location: **St. Cloud, MN, USA**
+* Copyright:
+
+  * Example: `© 2025 Anjana Tulasi Deverapalli. All Rights Reserved.`
+
+---
+
+### 🎨 Styling Instructions
+
+* Use **regular CSS files** for styling each component.
+* Apply a **clean, professional layout** with a light or dark theme.
+* Use **hover transitions** on links, buttons, and cards.
+* Make all pages **mobile responsive**.
+* Use **CSS media queries** and **flexbox/grid** where necessary.
+
+---
+
+Would you like me to:
+
+* Generate the basic folder structure and file names?
+* Write a starter React component setup (`App.js`, `Navbar`, and pages)?
+
+I'm happy to help you start coding this or build a boilerplate project you can directly paste into Replit.
