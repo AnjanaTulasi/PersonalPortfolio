@@ -97,15 +97,15 @@ export default function Sidebar() {
               return (
                 <li key={item.path}>
                   <Link href={item.path}>
-                    <a
-                      className={`nav-link flex items-center space-x-3 px-4 py-3 rounded-lg ${
+                    <span
+                      className={`nav-link flex items-center space-x-3 px-4 py-3 rounded-lg cursor-pointer ${
                         isActive ? 'active' : ''
                       }`}
                       onClick={closeSidebar}
                     >
                       <Icon className="h-5 w-5" />
                       <span>{item.label}</span>
-                    </a>
+                    </span>
                   </Link>
                 </li>
               );
