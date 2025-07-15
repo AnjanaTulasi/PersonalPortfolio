@@ -16,7 +16,7 @@ export default function Home() {
               </h2>
             </div>
             
-            <p className="text-lg text-slate-600 leading-relaxed">
+            <p className="text-lg text-slate-600 leading-relaxed text-justify bg-[#ffffff00]">
               I'm a passionate software developer currently pursuing my Master's in Computer Science at Saint Cloud State University. 
               With experience in full-stack development, middleware engineering, and machine learning, I love building innovative 
               solutions that make a difference. I'm particularly interested in AI/ML applications and scalable web technologies.
