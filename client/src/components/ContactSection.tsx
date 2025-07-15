@@ -52,7 +52,7 @@ export default function ContactSection() {
                 <h3 className="font-semibold text-sm mb-1">Email</h3>
                 <a 
                   href="mailto:anjanatdeverapalli@gmail.com" 
-                  className="text-slate-300 hover:text-white transition-colors text-sm"
+                  className="text-slate-300 hover:text-white transition-colors text-sm text-left"
                 >
                   anjanatdeverapalli@gmail.com
                 </a>
