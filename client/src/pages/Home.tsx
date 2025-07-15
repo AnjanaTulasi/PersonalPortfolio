@@ -49,8 +49,9 @@ export default function Home() {
                             target.parentElement!.innerHTML = `
                               <div class="w-full h-full bg-blue-600 flex items-center justify-center">
                                 <span class="text-8xl text-white font-bold">AT</span>
-                              </div>;
-                }}
+                              </div>
+                            `;
+                          }}
               />
             </div>
           </div>
