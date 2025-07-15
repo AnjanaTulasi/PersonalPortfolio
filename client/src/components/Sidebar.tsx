@@ -66,7 +66,7 @@ export default function Sidebar() {
               className="hover:scale-110 transition-transform duration-300"
             >
               <img 
-                src="/linkedin-logo.svg" 
+                src="/linkedin-logo.png" 
                 alt="LinkedIn" 
                 className="w-6 h-6"
               />
@@ -78,7 +78,7 @@ export default function Sidebar() {
               className="hover:scale-110 transition-transform duration-300"
             >
               <img 
-                src="/github-logo.svg" 
+                src="/github-logo.png" 
                 alt="GitHub" 
                 className="w-6 h-6"
               />
