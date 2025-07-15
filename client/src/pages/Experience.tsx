@@ -1,5 +1,6 @@
 import { Building, Rocket, Users, Server } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
+import { l } from "node_modules/vite/dist/node/types.d-aGj9QkWt";
 
 // Company Logo Components
 const NextGenLogo = ({ url }: { url: string }) => (
@@ -97,8 +98,15 @@ export default function Experience() {
       company: "NextGen Software Solutions",
       companyUrl: "https://nxtgensoftwaresolutions.com/",
       period: "September 2024 – April 2025",
-      description: "Working on middleware development, WebLogic administration, and automation scripting to streamline deployment processes.",
-      logo: NextGenLogo
+      description: "• Administered Oracle WebLogic and Fusion Middleware environments, supporting deployments, domain
+        restarts, and cloud-integrated hybrid systems.\linebreak
+        • Automated operational tasks and alert systems using WLST, Shell, and Python, improving efficiency and
+        monitoring across Unix/Linux platforms.\linebreak
+        • Resolved high-priority SOA/AIA and database performance issues, contributing to platform reliability and service
+        continuity.\linebreak
+        • Participated in Agile workflows using Jira for sprint tracking and collaborated with cross-functional teams to
+        enhance cloud adoption strategies.",
+          logo: NextGenLogo
     },
     {
       title: "Software Engineering Fellow",
