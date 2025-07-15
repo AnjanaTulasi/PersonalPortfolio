@@ -22,7 +22,6 @@ export default function ContactSection() {
                 <Mail className="w-5 h-5" />
               </div>
               <div className="text-center md:text-left">
-                <h3 className="font-semibold text-sm mb-1">Email</h3>
                 <a
                   href="mailto:anjanatdeverapalli@gmail.com"
                   className="text-slate-300 hover:text-white transition-colors text-sm break-all"
@@ -37,7 +36,6 @@ export default function ContactSection() {
                 <Phone className="w-5 h-5" />
               </div>
               <div className="text-center md:text-left">
-                <h3 className="font-semibold text-sm mb-1">Phone</h3>
                 <a
                   href="tel:+13202828209"
                   className="text-slate-300 hover:text-white transition-colors text-sm"
@@ -52,7 +50,6 @@ export default function ContactSection() {
                 <MapPin className="w-5 h-5" />
               </div>
               <div className="text-center md:text-left">
-                <h3 className="font-semibold text-sm mb-1">Location</h3>
                 <span className="text-slate-300 text-sm">
                   St. Cloud, Minnesota, USA
                 </span>
@@ -60,29 +57,29 @@ export default function ContactSection() {
             </div>
           </div>
 
-          {/* Second Row: GitHub and LinkedIn buttons */}
-          <div className="flex justify-center gap-6">
-            <Button
-              variant="outline"
-              className="border-slate-300 text-white hover:bg-slate-800 bg-transparent transition-all duration-300 hover:scale-105"
+          {/* Second Row: GitHub and LinkedIn icons only */}
+          <div className="flex justify-center gap-6 mt-4">
+            <button
               onClick={() =>
                 window.open("https://github.com/AnjanaTulasi", "_blank")
               }
+              className="hover:scale-110 transition-transform duration-200"
             >
-              <img src="/github-logo.png" alt="GitHub" className="w-4 h-4 mr-2" />
-              GitHub
-            </Button>
+              <img src="/github-logo.png" alt="GitHub" className="w-6 h-6" />
+            </button>
 
-            <Button
-              variant="outline"
-              className="border-slate-300 text-white hover:bg-slate-800 bg-transparent transition-all duration-300 hover:scale-105"
+            <button
               onClick={() =>
                 window.open("https://linkedin.com/in/anjanatulasi", "_blank")
               }
+              className="hover:scale-110 transition-transform duration-200"
             >
-              <img src="/linkedin-logo.png" alt="LinkedIn" className="w-4 h-4 mr-2" />
-              LinkedIn
-            </Button>
+              <img
+                src="/linkedin-logo.png"
+                alt="LinkedIn"
+                className="w-6 h-6"
+              />
+            </button>
           </div>
         </div>
       </div>
