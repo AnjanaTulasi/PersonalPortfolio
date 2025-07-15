@@ -4,7 +4,7 @@ import GreetingSwitcher from "@/components/GreetingSwitcher";
 
 export default function Home() {
   return (
-    <div className="p-8 md:p-12">
+    <div className="p-8 md:p-12 bg-[#ffffff00] text-[#ffffff]">
       <div className="max-w-6xl mx-auto">
         <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
           <div className="space-y-6">
