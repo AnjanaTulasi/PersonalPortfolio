@@ -98,7 +98,14 @@ export default function Experience() {
       company: "NextGen Software Solutions",
       companyUrl: "https://nxtgensoftwaresolutions.com/",
       period: "September 2024 – April 2025",
-      description: "• Administered Oracle WebLogic and Fusion Middleware environments, supporting deployments, domain restarts, and cloud-integrated hybrid systems.\n• Automated operational tasks and alert systems using WLST, Shell, and Python, improving efficiency and monitoring across Unix/Linux platforms.\n• Resolved high-priority SOA/AIA and database performance issues, contributing to platform reliability and service continuity.\n• Participated in Agile workflows using Jira for sprint tracking and collaborated with cross-functional teams to enhance cloud adoption strategies.",
+          description: `
+          • Administered Oracle WebLogic and Fusion Middleware environments, supporting deployments, domain restarts, and cloud-integrated hybrid systems.
+          • Automated operational tasks and alert systems using WLST, Shell, and Python, improving efficiency and monitoring across Unix/Linux platforms.
+          • Resolved high-priority SOA/AIA and database performance issues, contributing to platform reliability and service continuity.
+          • Participated in Agile workflows using Jira for sprint tracking and collaborated with cross-functional teams to enhance cloud adoption strategies.
+          ,
+        
+
           logo: NextGenLogo
     },
     {
@@ -106,7 +113,12 @@ export default function Experience() {
       company: "Headstarter Fellowship",
       companyUrl: "https://headstarter.co/",
       period: "July 2024 – September 2024",
-      description: "Intensive full-stack web development program focusing on modern JavaScript frameworks, React, and backend technologies.",
+     description: `
+• Completed intensive training in web development and database integration, gaining hands-on experience.
+• As a Headstarter Fellow, contributed to full-stack development, API integration, database management, and UI/UX enhancements across multiple team and solo projects.
+• Built personal portfolio website (HTML, CSS, Google Analytics) and Pantry Management App (Next.js, Material UI, Firebase) with end-to-end development and deployment.
+`
+
       logo: HeadstarterLogo
     },
     {
@@ -114,7 +126,16 @@ export default function Experience() {
       company: "Saint Cloud State University",
       companyUrl: "https://www.stcloudstate.edu/",
       period: "January 2023 – Present",
-      description: "Teaching mobile app development concepts and providing tutoring in Computer Science and Mathematics for undergraduate students.",
+      description: `
+Graduate Teaching Assistant
+• Mentored undergraduates in app development and cloud computing while grading assignments and preparing lecture materials.
+• Conducted code reviews and edited IEEE research papers for technical accuracy and formatting standards.
+
+TRIO Tutor
+• Provided 1:1 tutoring in Mathematics and Computer Science, adapting support plans to meet diverse student needs.
+• Conducted outreach for TRIO services and connected students with financial aid, career, and counseling resources.
+`
+
       logo: StCloudStateLogo
     },
     {
@@ -122,7 +143,20 @@ export default function Experience() {
       company: "Vodafone (VOIS)",
       companyUrl: "https://www.vodafone.com/careers/professional-career-areas/shared-services",
       period: "December 2019 – December 2022",
-      description: "Specialized in middleware automation, system monitoring, and performance optimization using various enterprise tools and technologies.",
+      description: `
+Oracle Fusion Middleware Application Support Engineer
+• Served as key support engineer for WebLogic Administration and Oracle Database in high-availability environments.
+• Reduced incident volume by 70% through proactive monitoring and system maintenance, improving uptime and application stability.
+• Supported and optimized SOA Suite and Oracle Service Bus (OSB), reducing downtime and user complaints by 85%.
+• Spearheaded WebLogic migration from 11g to 12c, enhancing performance, scalability, and security.
+• Automated deployments and maintenance using Python, WLST, and Shell scripting, reducing manual intervention by 40%.
+• Conducted root cause analysis using heap and thread dumps to identify memory leaks and performance issues.
+• Managed deployments, version control, domain restarts, and platform upgrades in production.
+• Integrated Oracle Middleware with Oracle Cloud Infrastructure (OCI) and third-party clouds for hybrid deployment.
+• Implemented real-time monitoring and alerting with Splunk and AppDynamics, reducing incident response times by 50%.
+• Performed SOAP API testing to validate service integrations and ensure reliability across systems.
+`
+
       logo: VodafoneLogo
     }
   ];
