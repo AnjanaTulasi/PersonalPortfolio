@@ -98,14 +98,7 @@ export default function Experience() {
       company: "NextGen Software Solutions",
       companyUrl: "https://nxtgensoftwaresolutions.com/",
       period: "September 2024 – April 2025",
-      description: "• Administered Oracle WebLogic and Fusion Middleware environments, supporting deployments, domain
-        restarts, and cloud-integrated hybrid systems.\linebreak
-        • Automated operational tasks and alert systems using WLST, Shell, and Python, improving efficiency and
-        monitoring across Unix/Linux platforms.\linebreak
-        • Resolved high-priority SOA/AIA and database performance issues, contributing to platform reliability and service
-        continuity.\linebreak
-        • Participated in Agile workflows using Jira for sprint tracking and collaborated with cross-functional teams to
-        enhance cloud adoption strategies.",
+      description: "• Administered Oracle WebLogic and Fusion Middleware environments, supporting deployments, domain restarts, and cloud-integrated hybrid systems.\n• Automated operational tasks and alert systems using WLST, Shell, and Python, improving efficiency and monitoring across Unix/Linux platforms.\n• Resolved high-priority SOA/AIA and database performance issues, contributing to platform reliability and service continuity.\n• Participated in Agile workflows using Jira for sprint tracking and collaborated with cross-functional teams to enhance cloud adoption strategies.",
           logo: NextGenLogo
     },
     {
