@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Mail, Phone, MapPin, Linkedin, Github, Send } from "lucide-react";
+import { Mail, Phone, MapPin, Send } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -133,7 +133,7 @@ export default function Contact() {
                   rel="noopener noreferrer"
                   className="w-12 h-12 bg-blue-100 hover:bg-blue-200 rounded-lg flex items-center justify-center transition-all duration-300 hover:scale-110"
                 >
-                  <Linkedin className="h-6 w-6 text-blue-600" />
+                  <img src="/linkedin-logo.png" alt="LinkedIn" className="h-6 w-6" />
                 </a>
                 <a
                   href="https://github.com/AnjanaTulasi"
@@ -141,7 +141,7 @@ export default function Contact() {
                   rel="noopener noreferrer"
                   className="w-12 h-12 bg-gray-100 hover:bg-gray-200 rounded-lg flex items-center justify-center transition-all duration-300 hover:scale-110"
                 >
-                  <Github className="h-6 w-6 text-gray-700" />
+                  <img src="/github-logo.png" alt="GitHub" className="h-6 w-6" />
                 </a>
               </div>
             </div>

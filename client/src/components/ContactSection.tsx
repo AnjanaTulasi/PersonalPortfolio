@@ -1,4 +1,4 @@
-import { Mail, Phone, MapPin, Github, Linkedin } from "lucide-react";
+import { Mail, Phone, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export default function ContactSection() {
@@ -69,7 +69,8 @@ export default function ContactSection() {
                 window.open("https://github.com/AnjanaTulasi", "_blank")
               }
             >
-              <Github className="w-4 h-4 mr-2" />
+              <img src="/github-logo.png" alt="GitHub" className="w-4 h-4 mr-2" />
+              GitHub
             </Button>
 
             <Button
@@ -79,7 +80,8 @@ export default function ContactSection() {
                 window.open("https://linkedin.com/in/anjanatulasi", "_blank")
               }
             >
-              <Linkedin className="w-4 h-4 mr-2" />
+              <img src="/linkedin-logo.png" alt="LinkedIn" className="w-4 h-4 mr-2" />
+              LinkedIn
             </Button>
           </div>
         </div>
