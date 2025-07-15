@@ -1,5 +1,6 @@
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
+import GreetingSwitcher from "@/components/GreetingSwitcher";
 
 export default function Home() {
   return (
@@ -9,7 +10,7 @@ export default function Home() {
           <div className="space-y-6">
             <div>
               <h1 className="text-4xl md:text-5xl font-bold text-slate-800 mb-4">
-                Hi, I'm <span className="text-primary">Anjana Tulasi</span>
+                <GreetingSwitcher />, I'm <span className="text-primary">Anjana Tulasi</span> 👋
               </h1>
               <h2 className="text-xl md:text-2xl text-slate-600 font-medium mb-6">
                 Software Developer & CS Graduate Student
