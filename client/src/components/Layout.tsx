@@ -1,6 +1,7 @@
 import { ReactNode } from "react";
 import Sidebar from "./Sidebar";
 import Footer from "./Footer";
+import ContactSection from "./ContactSection";
 
 interface LayoutProps {
   children: ReactNode;
@@ -14,6 +15,7 @@ export default function Layout({ children }: LayoutProps) {
         <div className="page-transition">
           {children}
         </div>
+        <ContactSection />
         <Footer />
       </main>
     </div>

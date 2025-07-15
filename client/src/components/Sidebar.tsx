@@ -14,7 +14,6 @@ export default function Sidebar() {
     { path: "/experience", icon: Briefcase, label: "Experience" },
     { path: "/skills", icon: Settings, label: "Skills" },
     { path: "/projects", icon: Code, label: "Projects" },
-    { path: "/contact", icon: Mail, label: "Contact Me" },
   ];
 
   const closeSidebar = () => {

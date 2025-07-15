@@ -9,7 +9,7 @@ import Education from "@/pages/Education";
 import Experience from "@/pages/Experience";
 import Skills from "@/pages/Skills";
 import Projects from "@/pages/Projects";
-import Contact from "@/pages/Contact";
+
 import NotFound from "@/pages/not-found";
 
 function Router() {
@@ -21,7 +21,7 @@ function Router() {
         <Route path="/experience" component={Experience} />
         <Route path="/skills" component={Skills} />
         <Route path="/projects" component={Projects} />
-        <Route path="/contact" component={Contact} />
+
         <Route component={NotFound} />
       </Switch>
     </Layout>
