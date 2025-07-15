@@ -77,14 +77,7 @@ export default function ContactSection() {
               <Download className="w-4 h-4 mr-2" />
               Download Resume
             </Button>
-            <div className="bg-slate-800 rounded-lg p-6">
-              <h3 className="font-semibold text-lg mb-3">Current Status</h3>
-              <p className="text-slate-300">
-                🎓 Pursuing Master's in Computer Science at Saint Cloud State University<br/>
-                💼 Open to full-time opportunities starting May 2025<br/>
-                🚀 Available for internships and consulting projects
-              </p>
-            </div>
+            
           </div>
         </div>
       </div>
