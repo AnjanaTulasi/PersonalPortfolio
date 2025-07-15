@@ -148,7 +148,7 @@ export default function Experience() {
             return (
               <Card key={index} className="hover-lift">
                 <CardContent className="p-6">
-                  <div className="flex items-start space-x-4">
+                  <div className="flex items-start space-x-4 text-justify">
                     <LogoComponent url={exp.companyUrl} />
                     <div className="flex-1">
                       <h3 className="text-xl font-semibold text-slate-800">{exp.title}</h3>
