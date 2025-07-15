@@ -34,10 +34,11 @@ Preferred communication style: Simple, everyday language.
 ## Key Components
 
 ### Client Structure
-- **Pages**: Home, Education, Experience, Skills, Projects, Contact
+- **Pages**: Home, Education, Experience, Skills, Projects, Contact, Resume
 - **Layout**: Responsive design with left sidebar navigation that collapses to hamburger menu on mobile
 - **Components**: Reusable UI components using shadcn/ui library
 - **Styling**: Professional portfolio design with smooth animations and hover effects
+- **Resume Page**: Dedicated page for viewing resume with embedded PDF viewer and download options
 
 ### Server Structure
 - **Routes**: Centralized route registration in `server/routes.ts`
@@ -114,3 +115,18 @@ Preferred communication style: Simple, everyday language.
 - **Schema**: Centralized in `shared/schema.ts` for type sharing
 
 The architecture supports both development and production environments with proper error handling, logging, and responsive design patterns suitable for a professional portfolio website.
+
+## Recent Changes (January 2025)
+
+### Sidebar Updates
+- **Custom Logo Integration**: Replaced Lucide React icons with custom SVG logos for LinkedIn and GitHub
+- **Clean Icon Design**: Removed button backgrounds and borders, using hover scale animations for better UX
+- **Resume Navigation**: Changed "Download Resume" to "View Resume" with navigation to dedicated resume page
+- **File Structure**: Created `/public/linkedin-logo.svg` and `/public/github-logo.svg` for custom branding
+
+### Resume Page Implementation
+- **New Route**: Added `/resume` route with dedicated Resume page component
+- **PDF Viewer**: Implemented embedded PDF viewer using iframe for resume display
+- **Download Options**: Multiple download and viewing options including direct PDF download
+- **Responsive Design**: Mobile-friendly layout with fallback options for PDF viewing
+- **File Management**: Resume stored in `/public/resume.pdf` for easy access and updates

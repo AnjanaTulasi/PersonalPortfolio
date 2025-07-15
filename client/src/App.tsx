@@ -10,6 +10,7 @@ import Experience from "@/pages/Experience";
 import Skills from "@/pages/Skills";
 import Projects from "@/pages/Projects";
 import Contact from "@/pages/Contact";
+import Resume from "@/pages/Resume";
 
 import NotFound from "@/pages/not-found";
 
@@ -23,6 +24,7 @@ function Router() {
         <Route path="/skills" component={Skills} />
         <Route path="/projects" component={Projects} />
         <Route path="/contact" component={Contact} />
+        <Route path="/resume" component={Resume} />
 
         <Route component={NotFound} />
       </Switch>

@@ -50,9 +50,7 @@ export default function ContactSection() {
                 <MapPin className="w-5 h-5" />
               </div>
               <div className="text-center md:text-left">
-                <span className="text-slate-300 text-sm">
-                  St. Cloud, Minnesota, USA
-                </span>
+                <span className="text-slate-300 text-sm">Minnesota, USA</span>
               </div>
             </div>
           </div>

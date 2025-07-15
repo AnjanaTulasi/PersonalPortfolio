@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link, useLocation } from "wouter";
-import { Menu, X, Home, GraduationCap, Briefcase, Settings, Code, Mail, Linkedin, Github, Download } from "lucide-react";
+import { Menu, X, Home, GraduationCap, Briefcase, Settings, Code, Mail, FileText } from "lucide-react";
 import { useIsMobile } from "@/hooks/use-mobile";
 
 export default function Sidebar() {
@@ -58,30 +58,39 @@ export default function Sidebar() {
             </div>
           </div>
           
-          <div className="flex space-x-3">
+          <div className="flex space-x-4">
             <a
               href="https://linkedin.com/in/anjanatulasi"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-8 h-8 bg-blue-100 hover:bg-blue-200 rounded-lg flex items-center justify-center transition-colors"
+              className="hover:scale-110 transition-transform duration-300"
             >
-              <Linkedin className="h-4 w-4 text-blue-600" />
+              <img 
+                src="/linkedin-logo.svg" 
+                alt="LinkedIn" 
+                className="w-6 h-6"
+              />
             </a>
             <a
               href="https://github.com/AnjanaTulasi"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-8 h-8 bg-gray-100 hover:bg-gray-200 rounded-lg flex items-center justify-center transition-colors"
+              className="hover:scale-110 transition-transform duration-300"
             >
-              <Github className="h-4 w-4 text-gray-700" />
+              <img 
+                src="/github-logo.svg" 
+                alt="GitHub" 
+                className="w-6 h-6"
+              />
             </a>
-            <a
-              href="/resume.pdf"
-              download
-              className="w-8 h-8 bg-green-100 hover:bg-green-200 rounded-lg flex items-center justify-center transition-colors"
-            >
-              <Download className="h-4 w-4 text-green-600" />
-            </a>
+            <Link href="/resume">
+              <span
+                className="hover:scale-110 transition-transform duration-300 cursor-pointer"
+                onClick={closeSidebar}
+              >
+                <FileText className="w-6 h-6 text-slate-600" />
+              </span>
+            </Link>
           </div>
         </div>
 
