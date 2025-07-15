@@ -37,17 +37,19 @@ export default function Home() {
             </div>
           </div>
           
-          <div className="flex justify-center">
-            <div className="w-96 h-96 rounded-2xl shadow-xl overflow-hidden">
-              <img 
-                src="/profile.jpg"
-                alt="Anjana Tulasi Deverapalli"
-                className="w-full h-full object-cover"
-                onError={(e) => {
-                  // Fallback to initials if image fails to load
-                  const target = e.target as HTMLImageElement;
-                  target.style.display = 'none';
-                  target.parentElement!.innerHTML = '<div class="w-full h-full bg-primary rounded-2xl flex items-center justify-center"><span class="text-8xl text-white font-bold">AT</span></div>';
+                    <div className="flex justify-center">
+                      <div className="w-[400px] h-[400px] shadow-xl overflow-hidden">
+                        <img 
+                          src="/profile.jpg"
+                          alt="Anjana Tulasi Deverapalli"
+                          className="w-full h-full object-cover"
+                          onError={(e) => {
+                            const target = e.target as HTMLImageElement;
+                            target.style.display = 'none';
+                            target.parentElement!.innerHTML = `
+                              <div class="w-full h-full bg-blue-600 flex items-center justify-center">
+                                <span class="text-8xl text-white font-bold">AT</span>
+                              </div>;
                 }}
               />
             </div>
