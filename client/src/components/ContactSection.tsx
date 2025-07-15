@@ -7,7 +7,7 @@ export default function ContactSection() {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-8">
           <h2 className="text-3xl font-bold mb-4">Get In Touch</h2>
-          <p className="text-slate-500 text-sm text-center whitespace-nowrap overflow-hidden text-ellipsis">
+          <p className="text-center whitespace-nowrap overflow-hidden text-ellipsis text-[#ffffff] text-[15px]">
             I'm always open to discussing new opportunities, collaborations, or
             just having a chat about technology. Feel free to reach out through
             any of the channels below.
